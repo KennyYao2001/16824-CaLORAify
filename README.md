@@ -27,6 +27,8 @@
 - **Recipe1M+ Dataset**: Base dataset for ingredient recognition.
 - **USDA Food Calorie Database**: Reference for granular nutritional data.
 
+Our self-constructed dataset store [here](https://huggingface.co/datasets/Kennyy/Cal_Data/tree/main).
+
 ### 2. Model Selection
 
 - Fine-tuning **MiniGPT-4**, using **LoRA** and **QLoRA** methods.
