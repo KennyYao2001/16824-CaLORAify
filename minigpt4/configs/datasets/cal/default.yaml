@@ -1,0 +1,28 @@
+datasets:
+  cal_data:
+    # data_dir: ${env.data_dir}/datasets
+    data_type: images # [images|videos|features]
+
+    build_info:
+
+      annotations:
+        train:
+          url:
+              - None
+          storage:
+              - /root/autodl-tmp/VLR_project/data/cal_data/train_data.json
+        val:
+          url:
+              - None
+          storage:
+              - /root/autodl-tmp/VLR_project/data/cal_data/val_data.json
+        test:
+          url:
+              - None
+          storage:
+              - /root/autodl-tmp/VLR_project/data/cal_data/test_data.json
+
+      images:
+          storage: /root/autodl-tmp/VLR_project/data/cal_data
+
+  
