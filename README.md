@@ -1,4 +1,4 @@
-# CaLoRAify: Fine-tuning Visual Language Models for Calorie Estimation via LoRA Methods
+# CaLoRAify: *Cal*orie Estimation with Visual-Text Pairing and *LoRA*-Driven Visual Language Models
 
 **Anonymous Authors**
 
