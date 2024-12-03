@@ -37,11 +37,9 @@ Our self-constructed dataset store [here](https://huggingface.co/datasets/Kennyy
 
 The loss function combines cross-entropy and mean squared error (MSE):
 
-\[
-L = \lambda_{CE}L_{CE} + \lambda_{MSE}L_{MSE}
-\]
+$L = \lambda_{CE}L_{CE} + \lambda_{MSE}L_{MSE}$
 
-Adjust weights \(\lambda_{CE}\) and \(\lambda_{MSE}\) to balance tasks.
+Adjust weights $\lambda_{CE}$ and $\lambda_{MSE}$ to balance tasks.
 
 ### 4. Training and Evaluation
 
