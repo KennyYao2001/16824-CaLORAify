@@ -1,4 +1,4 @@
-<img src="./figs/calmera_icon.png" alt="icon" style="width:30px; height:30px;" /> CaLoRAify: *Cal*orie Estimation with Visual-Text Pairing and *LoRA*-Driven Visual Language Models
+<img src="./figs/calmera_icon.png" alt="icon" style="width:30px; height:30px;" /> **CaLoRAify: Calorie Estimation with Visual-Text Pairing and *LoRA*-Driven Visual Language Models**
 
 **Dongyu Yao<sup>&dagger;</sup> Keling Yao<sup>&dagger;</sup> Junhong Zhou<sup>&dagger;</sup> Yinghao Zhang<sup>&dagger;</sup>**
 
