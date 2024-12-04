@@ -2,8 +2,9 @@
 
 **Dongyu Yao<sup>&dagger;</sup> Keling Yao<sup>&dagger;</sup> Junhong Zhou<sup>&dagger;</sup> Yinghao Zhang<sup>&dagger;</sup>**
 
-**<sup>&dagger;</sup>: Equal contribution
-Carnegie Mellon University**
+**<sup>&dagger;</sup>: Equal contribution**
+
+**Carnegie Mellon University**
 
 ---
 
