@@ -1,12 +1,16 @@
-# CaLoRAify: Fine-tuning Visual Language Models for Calorie Estimation via LoRA Methods
+<img src="./figs/calmera_icon.png" alt="icon" style="width:30px; height:30px;" /> **CaLoRAify: Calorie Estimation with Visual-Text Pairing and *LoRA*-Driven Visual Language Models**
 
-**Anonymous Authors**
+**Dongyu Yao<sup>&dagger;</sup> Keling Yao<sup>&dagger;</sup> Junhong Zhou<sup>&dagger;</sup> Yinghao Zhang<sup>&dagger;</sup>**
+
+**<sup>&dagger;</sup>: Equal contribution**
+
+**Carnegie Mellon University**
 
 ---
 
 ## Overview
 
-**CaLoRAify** is a novel project aimed at addressing the obesity epidemic by leveraging **Vision-Language Models (VLMs)**, fine-tuning techniques, and **Retrieval-Augmented Generation (RAG)** methods to estimate calorie content in meals. The system serves as a **virtual dietitian**, offering users calorie analyses and dietary recommendations based on meal photos.
+**CaLoRAify** is a novel project aimed at addressing the obesity epidemic (the "heavy" issue) by leveraging **Vision-Language Models (VLMs)**, fine-tuning techniques, and **Retrieval-Augmented Generation (RAG)** methods to estimate meal calorie content. The system serves as a **virtual dietitian**, offering users calorie analyses and dietary recommendations based on meal photos.
 
 ---
 
@@ -66,8 +70,8 @@ Adjust weights $\lambda_{CE}$ and $\lambda_{MSE}$ to balance tasks.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/anonymous/caloRAify.git
-   cd caloRAify
+   git clone https://github.com/KennyYao2001/16824-CaLORAify.git
+   cd 16824-CaLORAify
    ```
 
 2.	Create and activate the environment:
