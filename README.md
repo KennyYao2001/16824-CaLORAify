@@ -71,7 +71,7 @@ Adjust weights $\lambda_{CE}$ and $\lambda_{MSE}$ to balance tasks.
 1. Clone the repository:
    ```bash
    git clone https://github.com/KennyYao2001/16824-CaLORAify.git
-   cd caloRAify
+   cd 16824-CaLORAify
    ```
 
 2.	Create and activate the environment:
