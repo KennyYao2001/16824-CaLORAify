@@ -519,7 +519,7 @@ def gradio_taskselect(idx):
 
 chat = Chat(model, vis_processor, device=device)
 
-title = """<h1 align="center">MiniGPT-v2 Demo</h1>"""
+title = """<h1 align="center">Caloraify</h1>"""
 description = 'Welcome to Our MiniGPT-v2 Chatbot Demo!'
 # article = """<p><a href='https://minigpt-v2.github.io'><img src='https://img.shields.io/badge/Project-Page-Green'></a></p><p><a href='https://github.com/Vision-CAIR/MiniGPT-4/blob/main/MiniGPTv2.pdf'><img src='https://img.shields.io/badge/Paper-PDF-red'></a></p><p><a href='https://github.com/Vision-CAIR/MiniGPT-4'><img src='https://img.shields.io/badge/GitHub-Repo-blue'></a></p><p><a href='https://www.youtube.com/watch?v=atFCwV2hSY4'><img src='https://img.shields.io/badge/YouTube-Video-red'></a></p>"""
 article = """<p><a href='https://minigpt-v2.github.io'><img src='https://img.shields.io/badge/Project-Page-Green'></a></p>"""
@@ -563,7 +563,7 @@ with gr.Blocks() as demo:
         with gr.Column():
             chat_state = gr.State(value=None)
             img_list = gr.State(value=[])
-            chatbot = gr.Chatbot(label='MiniGPT-v2')
+            chatbot = gr.Chatbot(label='Calmera-v1')
 
             dataset = gr.Dataset(
                 components=[gr.Textbox(visible=False)],
@@ -644,4 +644,5 @@ with gr.Blocks() as demo:
 
     clear.click(gradio_reset, [chat_state, img_list], [chatbot, image, text_input, chat_state, img_list], queue=False)
 
+# demo.launch(share=True, enable_queue=True,server_name = "1.182.2.23", server_port = 7862)
 demo.launch(share=True, enable_queue=True)

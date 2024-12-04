@@ -5,7 +5,7 @@ model:
   image_size: 448
   end_sym: "</s>"
   llama_model: "/root/autodl-tmp/VLR_project/llama/llama"
-  ckpt: "/root/autodl-tmp/VLR_project/ckpt/train_complete/20241126131/checkpoint_best.pth"
+  ckpt: "/root/autodl-tmp/VLR_project/ckpt/checkpoint_best.pth"
   use_grad_checkpoint: True
   chat_template: True
   low_resource: False
@@ -14,7 +14,7 @@ model:
 
 datasets:
   cal_data:
-    batch_size: 12
+    batch_size: 1
     vis_processor:
       train:
         name: "blip2_image_train"

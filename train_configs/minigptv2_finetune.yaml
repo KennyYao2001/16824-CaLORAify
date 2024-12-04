@@ -14,7 +14,7 @@ model:
 
 datasets:
   cal_data:
-    batch_size: 12
+    batch_size: 1
     vis_processor:
       train:
         name: "blip2_image_train"

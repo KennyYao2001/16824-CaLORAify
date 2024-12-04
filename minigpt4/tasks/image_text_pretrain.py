@@ -58,7 +58,7 @@ class ImageTextPretrainTask(BaseTask):
         print("Start evaluation at ImageTextPretrainTask.")
         metric_logger = MetricLogger(delimiter="  ")
         header = "Evaluation"
-        print_freq = 1
+        print_freq = 10
 
         pred = []
         gt = []
@@ -66,17 +66,35 @@ class ImageTextPretrainTask(BaseTask):
         # print(model.device, get_rank(), get_world_size(), force=True) # check evaluation device
 
         i = 0
+        log = []
 
         for samples in metric_logger.log_every(data_loader, print_freq, header):
-            print(f"Evaluation step {i}/{len(data_loader)}")
             samples = prepare_sample(samples, cuda_enabled=cuda_enabled)
             gt.extend(samples["text_answer"])
             eval_output = model.generate(images=samples["image"], texts=samples["instruction_input"])
             pred.extend(eval_output)
+            print(samples["text_answer"], eval_output)
+            for k in range(len(samples["instruction_input"])):
+                question = samples["instruction_input"][k]
+                groundtruth = samples["text_answer"][k]
+                prediction = eval_output[k]
+                image_path = samples["image_path"][k]
+                log.append({
+                    "instruction": question,
+                    "GT": groundtruth,
+                    "pred": prediction,
+                    "image_path": image_path,
+                })
             i += 1
+            # save log into disk
+            if i%20==0 and is_main_process():
+                import json
+                with open("test_result.json", "w") as f:
+                    json.dump(log, f)
+            results = self.scorer.compute(gt, pred)
             # if i > 0:
             #     break
-        results = self.scorer.compute(gt, pred)
+            
         results["agg_metrics"] = 2.5 * results['rougeL'] + 1.5 * results['bleu']
         print(results)
 
@@ -95,4 +113,14 @@ if __name__ == "__main__":
         ["They are: 1 cup of rice, 3 cup of water, 3 tablespoon of butter, 12 teaspoon of salt, 14 teaspoon of spices, 1 tablespoon of lemoce, 2 tablespoon of capers, 2 tablespoon of parsley."],
     ]
     results = Metrics.compute(references, predictions)
+    log = []
+    log.append({
+                    "instruction": "ins",
+                    "GT": "GT",
+                    "pred": "pred",
+                    "image_path": "image_path",
+                })
+    import json
+    with open("test_result_tmp.json", "w") as f:
+        json.dump(log, f)
     print(results)

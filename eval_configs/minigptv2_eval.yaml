@@ -5,7 +5,7 @@ model:
   end_sym: "</s>"
   low_resource: True
   prompt_template: '[INST] {} [/INST]'
-  ckpt: "/root/autodl-tmp/VLR_project/ckpt/20241126081/checkpoint_best.pth"
+  ckpt: "/root/autodl-tmp/VLR_project/ckpt/checkpoint_best.pth"
   lora_r: 64
   lora_alpha: 16
 
