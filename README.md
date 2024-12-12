@@ -12,6 +12,8 @@
 
 **CaLoRAify** is a novel project aimed at addressing the obesity epidemic (the "heavy" issue) by leveraging **Vision-Language Models (VLMs)**, fine-tuning techniques, and **Retrieval-Augmented Generation (RAG)** methods to estimate meal calorie content. The system serves as a **virtual dietitian**, offering users calorie analyses and dietary recommendations based on meal photos.
 
+<img src="./figs/pipeline.png" />
+
 ---
 
 ## Features
