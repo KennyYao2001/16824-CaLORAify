@@ -1,10 +1,25 @@
-<img src="./figs/calmera_icon.png" alt="icon" style="width:30px; height:30px;" /> **CaLoRAify: Calorie Estimation with Visual-Text Pairing and *LoRA*-Driven Visual Language Models**
+<div align="center">
 
+<img src="./figs/calmera_icon.png" alt="icon" style="width:110px; height:95px;" />
+
+# [**CaLoRAify: *Ca*lorie Estimation with Visual-Text Pairing and *LoRA*-Driven Visual Language Models**](https://arxiv.org/abs/2412.09936)
+
+</div>
+
+---
+
+<div align="center">
+	
 **Dongyu Yao<sup>&dagger;</sup> Keling Yao<sup>&dagger;</sup> Junhong Zhou<sup>&dagger;</sup> Yinghao Zhang<sup>&dagger;</sup>**
 
 **<sup>&dagger;</sup>: Equal contribution**
 
 **Carnegie Mellon University**
+
+[![arXiv](https://img.shields.io/badge/arXiv-2412.09936-B31B1B.svg?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2412.09936)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97-Hugging%20Face-blue)](https://huggingface.co/datasets/Kennyy/Cal_Data/tree/main)
+
+</div>
 
 ---
 
